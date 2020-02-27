@@ -1,0 +1,34 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "A countdown component and hooks for React.",
+  "main": "lib/index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChhXin/useCountDown.git"
+  },
+  "keywords": [
+    "react-countdown",
+    "countdown"
+  ],
+  "author": "化风",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChhXin/useCountDown/issues"
+  },
+  "homepage": "https://github.com/ChhXin/useCountDown#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "react": "^16.12.0"
+  }
+}
