@@ -1,15 +1,15 @@
-# useCountDown
+# useCountDown &middot; [![npm](https://img.shields.io/npm/v/@chhxin/countdown.svg)](https://www.npmjs.com/package/@chhxin/countdown)
 
-[![GitHub license](https://img.shields.io/github/license/ChhXin/countdown)](https://github.com/ChhXin/countdown/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/ChhXin/countdown)](https://github.com/ChhXin/countdown/issues)
+[![GitHub license](https://img.shields.io/github/license/ChhXin/countdown)](https://github.com/ChhXin/countdown/blob/master/LICENSE)
 
-## 介绍
+## Introduction
 
-React 倒计时 Hooks
+React Countdown Hooks
 
-验证手机号发送验证码时，需要防止用户频繁点击发送（一般等待一分钟），此时发送按钮为禁用状态，且用户如果刷新或关闭当前验证页面时，倒计时仍然生效。
+When verifying the phone number and sending the verification code, you need to prevent the user from clicking frequently to send (usually waiting for one minute). At this time, the send button is disabled and the countdown still takes effect when the user refreshes or closes the current page.
 
-## 安装
+## Install
 
 ```shell
 npm i --save @chhxin/countdown
@@ -21,7 +21,7 @@ or
 yarn add @chhxin/countdown
 ```
 
-## 使用方式
+## Usage
 
 ### 1. Hooks API `useCountDown`
 
@@ -56,24 +56,24 @@ const Timer = () => (
 );
 ```
 
-## 参数说明
+## Props
 
-| name    | type   | required | default                             | description      |
-| ------- | ------ | -------- | ----------------------------------- | ---------------- |
-| id      | string | true     |                                     | 持久化的唯一标识 |
-| options | object | false    | `{total: 60, lifeCycle: 'session'}` | 其他参数         |
+| name    | type   | required | default                             |
+| ------- | ------ | -------- | ----------------------------------- |
+| id      | string | true     |                                     |
+| options | object | false    | `{total: 60, lifeCycle: 'session'}` |
 
-options 由下列属性组成
+options:
 
-| name      | type                  | required | default   | description        |
-| --------- | --------------------- | -------- | --------- | ------------------ |
-| total     | number                | false    | 60        | 倒计时总时长（秒） |
-| lifeCycle | 'session' \| 'always' | false    | 'session' | 持久化方式         |
+| name      | type                  | required | default   |
+| --------- | --------------------- | -------- | --------- |
+| total     | number                | false    | 60        |
+| lifeCycle | 'session' \| 'always' | false    | 'session' |
 
-lifeCycle 说明：
+lifeCycle：
 
-- 使用 'session'，即 sessionStorage，只在当前页面周期内生效，用户关闭页面或打开新页面时，则倒计时失效。
-- 使用 'always'，即 localStorage，用户只要不清除浏览器数据，则倒计时一直生效。
+- 'session', sessionStorage. It only takes effect during the current page period. When the user closes the page or opens a new page, the countdown is invalid.。
+- 'always', localStorage. As long as the user does not clear the browser data, the countdown will always take effect。
 
 ## Licence
 
