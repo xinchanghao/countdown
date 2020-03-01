@@ -23,7 +23,7 @@ yarn add @chhxin/countdown
 
 ## Usage
 
-### 1. Hooks API `useCountDown`
+### 1. `useCountDown`
 
 ```jsx
 import { useCountDown } from "@chhxin/countdown";
@@ -56,6 +56,10 @@ const Timer = () => (
 );
 ```
 
+## Demon
+
+[![Edit @chhxin/countdown Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/chhxincountdown-demo-qc3yd)
+
 ## Props
 
 | name    | type   | required | default                             |
@@ -72,8 +76,8 @@ options:
 
 lifeCycle：
 
-- 'session', sessionStorage. It only takes effect during the current page period. When the user closes the page or opens a new page, the countdown is invalid.。
-- 'always', localStorage. As long as the user does not clear the browser data, the countdown will always take effect。
+- 'session', sessionStorage. It only takes effect during the current page period. When the user closes the page or opens a new page, the countdown is invalid.
+- 'always', localStorage. As long as the user does not clear the browser data, the countdown will always take effect.
 
 ## Licence
 
