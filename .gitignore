@@ -3,6 +3,8 @@
 # Edit at https://www.gitignore.io/?templates=node
 .DS_Store
 
+lib/
+
 ### Node ###
 # Logs
 logs
