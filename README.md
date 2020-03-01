@@ -56,7 +56,7 @@ const Timer = () => (
 );
 ```
 
-## Demon
+## Demo
 
 [![Edit @chhxin/countdown Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/chhxincountdown-demo-qc3yd)
 
