@@ -5,9 +5,7 @@
 
 ## Introduction
 
-React Countdown Hooks
-
-When verifying the phone number and sending the verification code, you need to prevent the user from clicking frequently to send (usually waiting for one minute). At this time, the send button is disabled and the countdown still takes effect when the user refreshes or closes the current page.
+When sending the verification code, you need to prevent the user from clicking frequently to send (usually waiting for one minute). At this time, the send button is disabled and the countdown still takes effect when the user refreshes or closes the current page.
 
 ## Demo
 
@@ -67,12 +65,14 @@ const Timer = () => (
 | id      | string | true     |                                     |
 | options | object | false    | `{total: 60, lifeCycle: 'session'}` |
 
+
 options:
 
 | name      | type                  | required | default   |
 | --------- | --------------------- | -------- | --------- |
 | total     | number                | false    | 60        |
 | lifeCycle | 'session' \| 'always' | false    | 'session' |
+
 
 lifeCycle：
 
@@ -81,4 +81,6 @@ lifeCycle：
 
 ## Licence
 
-MIT
+MIT License
+
+Copyright (c) 2020 化风

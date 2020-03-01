@@ -1,7 +1,7 @@
 {
   "name": "@chhxin/countdown",
-  "version": "1.0.0",
-  "description": "A countdown component and hooks for React.",
+  "version": "1.0.2",
+  "description": "Countdown hooks and component",
   "main": "lib/index.js",
   "scripts": {
     "type-check": "tsc --noEmit",
