@@ -9,6 +9,10 @@ React Countdown Hooks
 
 When verifying the phone number and sending the verification code, you need to prevent the user from clicking frequently to send (usually waiting for one minute). At this time, the send button is disabled and the countdown still takes effect when the user refreshes or closes the current page.
 
+## Demo
+
+[![Edit @chhxin/countdown Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/chhxincountdown-demo-qc3yd)
+
 ## Install
 
 ```shell
@@ -55,10 +59,6 @@ const Timer = () => (
   </CountDownProvider>
 );
 ```
-
-## Demo
-
-[![Edit @chhxin/countdown Demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/chhxincountdown-demo-qc3yd)
 
 ## Props
 
