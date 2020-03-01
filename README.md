@@ -1,5 +1,8 @@
 # useCountDown
 
+[![GitHub license](https://img.shields.io/github/license/ChhXin/countdown)](https://github.com/ChhXin/countdown/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/ChhXin/countdown)](https://github.com/ChhXin/countdown/issues)
+
 ## 介绍
 
 React 倒计时 Hooks
@@ -71,3 +74,7 @@ lifeCycle 说明：
 
 - 使用 'session'，即 sessionStorage，只在当前页面周期内生效，用户关闭页面或打开新页面时，则倒计时失效。
 - 使用 'always'，即 localStorage，用户只要不清除浏览器数据，则倒计时一直生效。
+
+## Licence
+
+MIT
