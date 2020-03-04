@@ -28,34 +28,33 @@ yarn add @chhxin/countdown
 ### 1. `useCountDown`
 
 ```jsx
-import { useCountDown } from "@chhxin/countdown";
+import { useCountDown } from '@chhxin/countdown'
 
 const Timer = () => {
-  const [restTime, resetCountDown] = useCountDown("timer", {
+  const [restTime, resetCountDown] = useCountDown('timer', {
     total: 60,
-    lifeCycle: "session"
-  });
+    lifeCycle: 'session'
+  })
 
-  return null;
-};
+  return null
+}
 ```
 
 ### 2. `CountDownProvider`
 
 ```jsx
-import { CountDownProvider } from "@chhxin/countdown";
+import { CountDownProvider } from '@chhxin/countdown'
 
 const Timer = () => (
   <CountDownProvider
-    id="timer"
+    id='timer'
     options={{
       total: 60,
-      lifeCycle: "session"
-    }}
-  >
+      lifeCycle: 'session'
+    }}>
     {(restTime, resetCountDown) => null}
   </CountDownProvider>
-);
+)
 ```
 
 ## Props
@@ -65,7 +64,6 @@ const Timer = () => (
 | id      | string | true     |                                     |
 | options | object | false    | `{total: 60, lifeCycle: 'session'}` |
 
-
 options:
 
 | name      | type                  | required | default   |
@@ -73,14 +71,13 @@ options:
 | total     | number                | false    | 60        |
 | lifeCycle | 'session' \| 'always' | false    | 'session' |
 
-
 lifeCycle：
 
 - 'session', sessionStorage. It only takes effect during the current page period. When the user closes the page or opens a new page, the countdown is invalid.
 - 'always', localStorage. As long as the user does not clear the browser data, the countdown will always take effect.
 
-## Licence
+## License
 
 MIT License
 
-Copyright (c) 2020 化风
+Copyright (c) 2020 逸尘
